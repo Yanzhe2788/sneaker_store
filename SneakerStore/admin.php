@@ -56,8 +56,8 @@ h2{
 </head>
 <body>
     <h2> PAYMENTS </h2>
-    <h4> This is where you can access to database management </h4>
-    <a href="index.html" class="button">Click Me: Go to Store</a>
+    <h4 style="color:white";> This is where you can access to database management </h4>
+    <a href="index.html" class="button" style="color:white";>Click Me: Go to Store</a>
 
     <table>
         <tr>
