@@ -85,10 +85,7 @@ const products = [
                 code: "lightblue",
                 img: "./img/Product/hippie2.png",
             },
-            {
-                code: "black",
-                img: "./img/Product/hippie2.png",
-            },
+           
         ],
     },   
 ];
@@ -103,10 +100,10 @@ menuItems.forEach((item, index) => {
         // Change the current slide'
         wrapper.style.transform = `translateX(${-100*index}vw)`;
         //Change the choosen products
-        choosenproducts = products[index];
+        choosenProduct = products[index];
         //change text of currentProduct
-        currentProductTitle.textContent = choosenProduct.Title;
-        currentProductPrice.textContent = "RM" + choosenproduct.price;
+        currentProductTitle.textContent = choosenProduct.title;
+        currentProductPrice.textContent = "RM" + choosenProduct.price;
         currentProductImg.src = choosenProduct.colors[0].img;
         // assing new colours
         currentProductsColors.forEach((color, index) => {
@@ -115,8 +112,8 @@ menuItems.forEach((item, index) => {
     });
 });
 currentProductColors.forEach((color, index) => {
-    color.addEventListener("Click", () => {
-        currentProductImg.src = choosenProducts.colors[index].img;
+    color.addEventListener("click", () => {
+        currentProductImg.src = choosenProduct.colors[index].img;
     });
 });
 currentProductSizes.forEach((size, index) => {
